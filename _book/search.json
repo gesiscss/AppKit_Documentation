@@ -1,0 +1,119 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Documentation for the GESIS AppKit",
+    "section": "",
+    "text": "Preface\nTo learn more about Quarto books visit https://quarto.org/docs/books.\nThis is the landing/cover/overview page of the book. It needs to be called intro.qmd and this name must not be changed.\nThe overall settings for the book such as style, theme, title, authors, and overall interactive elements such as table of contents, search functions, pagination, download function etc. are set in the _quarto.yml file. To see an overview of setting options, check: https://quarto.org/docs/reference/projects/books.html\nWe can add new chapters to the the book by creating new files in the directory ending with .qmd. For example, if we create a new file called summary2.qmd. We can write some text into it and then add it to the book by listing it in the _quarto.yml file under chapters:\nWithin each chapter, we can structure headlines with # like so:"
+  },
+  {
+    "objectID": "index.html#headline-2",
+    "href": "index.html#headline-2",
+    "title": "Documentation for the GESIS AppKit",
+    "section": "Headline 2",
+    "text": "Headline 2\n\nHeadline 3\n\nHeadline 4\n\nHeadline 5\n\nHeadline 6"
+  },
+  {
+    "objectID": "index.html#markdown-basics",
+    "href": "index.html#markdown-basics",
+    "title": "Documentation for the GESIS AppKit",
+    "section": "Markdown Basics",
+    "text": "Markdown Basics\nWe can make text bold, italicized, strikethrough or use verbatim code highlights:\nitalics, bold, bold italics\nsuperscript2 / subscript2\nstrikethrough\nverbatim code\ninline math: \\(E = mc^{2}\\)\ndisplay math: \\[E = mc^{2}\\]\n\n\\[\n\\def\\RR{{\\bf R}}\n\\def\\bold#1{{\\bf #1}}\n\\]\n\n\nDiv\n\n\nBlockquote\n\nLine Block\n  Spaces and newlines\n  are preserved\nendash: –\nemdash: —"
+  },
+  {
+    "objectID": "index.html#links",
+    "href": "index.html#links",
+    "title": "Documentation for the GESIS AppKit",
+    "section": "Links",
+    "text": "Links\nWe can also add links and images:\nLinks without link text: https://quarto.org\nLinks with link text: Quarto"
+  },
+  {
+    "objectID": "index.html#images",
+    "href": "index.html#images",
+    "title": "Documentation for the GESIS AppKit",
+    "section": "Images",
+    "text": "Images\nWe can do regular images\n\n\n\nSquirrel\n\n\nWe can also do multiple images with layouting\n\n\n\n\n\n\n\n(a) Surus\n\n\n\n\n\n\n\n(b) Hanno\n\n\n\n\nFigure 1.1: Famous Squirrels\n\n\nWe can also change image sizes individually\n\n\n\n\n\n\nFrank\n\n\n\n\n \n\n\n\n\n\nBob\n\n\n\n\n\n\n\n\n\nHerbert"
+  },
+  {
+    "objectID": "index.html#lists",
+    "href": "index.html#lists",
+    "title": "Documentation for the GESIS AppKit",
+    "section": "Lists",
+    "text": "Lists\nWe can also create lists\n\nunordered list\n\nsub-item 1\nsub-item 2\n\nsub-sub-item 1\n\n\nitem 2\nContinued (indent 4 spaces)\n\n\nordered list\nitem 2\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\nA list whose numbering\n\ncontinues after\n\nan interruption\n\n\n\nA list\n\n\n\n\nFollowed by another list\n\n\n\nterm\n\ndefinition"
+  },
+  {
+    "objectID": "index.html#tables",
+    "href": "index.html#tables",
+    "title": "Documentation for the GESIS AppKit",
+    "section": "Tables",
+    "text": "Tables\nWe can also add tables\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1"
+  },
+  {
+    "objectID": "index.html#diagrams-and-flowcharts",
+    "href": "index.html#diagrams-and-flowcharts",
+    "title": "Documentation for the GESIS AppKit",
+    "section": "Diagrams and Flowcharts",
+    "text": "Diagrams and Flowcharts\nWe can also add mermaid and graphviz diagrams and flowcharts\n\n\n\n\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C --&gt; D[Result one]\n  C --&gt; E[Result two]"
+  },
+  {
+    "objectID": "index.html#videos",
+    "href": "index.html#videos",
+    "title": "Documentation for the GESIS AppKit",
+    "section": "Videos",
+    "text": "Videos\nWe can also embedd videos"
+  },
+  {
+    "objectID": "index.html#pagebreaks",
+    "href": "index.html#pagebreaks",
+    "title": "Documentation for the GESIS AppKit",
+    "section": "Pagebreaks",
+    "text": "Pagebreaks\nWe can also add pagebreaks. This only affects pdfs but not htmls.\npage 1\n\npage 2"
+  },
+  {
+    "objectID": "index.html#callout-blocks",
+    "href": "index.html#callout-blocks",
+    "title": "Documentation for the GESIS AppKit",
+    "section": "Callout blocks",
+    "text": "Callout blocks\nWe can highlight text with callout blocks\n\n\n\n\n\n\nNote\n\n\n\nNote that there are five types of callouts, including: note, warning, important, tip, and caution.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nThis is a red label warning\n\n\n\n\n\n\n\n\nTip with Title\n\n\n\nThis is an example of a callout with a title.\n\n\n\n\n\n\n\n\nExpand To Learn About Collapse\n\n\n\n\n\nThis is an example of a ‘folded’ caution callout that can be expanded by the user. You can use collapse=\"true\" to collapse it by default or collapse=\"false\" to make a collapsible callout that is expanded by default.\n\n\n\n\n\n\n\n\n\nPay Attention\n\n\n\nUsing callouts is an effective way to highlight content that your reader give special consideration or attention."
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "summary2.html",
+    "href": "summary2.html",
+    "title": "3  Summary 2",
+    "section": "",
+    "text": "In summary 2, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Summary 2</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  }
+]

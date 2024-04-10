@@ -1,0 +1,46 @@
+project:
+  type: book
+
+book:
+  cover-image: cover.png
+  title: "Documentation for the GESIS AppKit"
+  downloads: [pdf, epub]
+  sharing: [twitter, facebook]
+  author:
+  - name: Julian Kohne
+    orcid: 0000-0002-6710-7545
+    url: https://www.juliankohne.com/
+    email: julian.kohne@gesis.org
+    corresponding: false
+  - name: Lukas Otto
+    orcid: 0000-0002-4374-6924
+    url: https://lukasotto.com/
+    email: lukas.otto@gesis.org
+    corresponding: true
+  - name: Mareike Wieland
+    orcid: 0000-0002-3269-2318
+    url: https://en.wikipedia.org
+    email: mareike.wieland@gesis.org
+    corresponding: true
+  date: "10/5/2023"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - summary2.qmd
+    - references.qmd
+    
+embed-resources: true
+
+
+bibliography: references.bib
+
+format:
+  html:
+    self-contained: true
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+

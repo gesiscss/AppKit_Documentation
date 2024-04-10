@@ -1,0 +1,7 @@
+# Summary 2
+
+In summary 2, this book has no content whatsoever.
+
+```{r}
+1 + 1
+```
