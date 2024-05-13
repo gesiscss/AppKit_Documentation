@@ -2,7 +2,7 @@
 
 To learn more about Quarto books visit <https://quarto.org/docs/books>.
 
-HELLO MAREIKE!
+HELLO MAREIKE! Hi Julian!
 
 This is the landing/cover/overview page of the book.
 It needs to be called `intro.qmd` and this name must not be changed.
