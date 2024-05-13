@@ -2,6 +2,8 @@
 
 To learn more about Quarto books visit <https://quarto.org/docs/books>.
 
+HELLO MAREIKE!
+
 This is the landing/cover/overview page of the book.
 It needs to be called `intro.qmd` and this name must not be changed.
 
@@ -84,7 +86,7 @@ We can also do multiple images with layouting
 
 ::: {#fig-squirrels layout-ncol=2}
 
-![Surus](squirrel.png){#fig-surus}
+![Surus](download.jpeg){#fig-surus}
 
 ![Hanno](squirrel.png){#fig-hanno}
 
@@ -178,6 +180,12 @@ page 1
 {{< pagebreak >}}
 
 page 2
+
+## Codeblocks
+
+```{r eval = F}
+780 + 220
+```
 
 
 ## Callout blocks
