@@ -1,0 +1,669 @@
+---
+title: "GESIS AppKit - Manual"
+downloads: [html]
+sharing: [twitter, facebook]
+bibliography: ../references.bib
+author:
+  - name: Mareike Wieland
+    orcid: 0000-0002-3269-2318
+    url: https://www.gesis.org/institut/ueber-uns/mitarbeitendenverzeichnis/person/Mareike.Wieland
+    email: mareike.wieland@gesis.org
+    corresponding: true
+  - name: Lara Simon
+    url: https://www.linkedin.com/in/lara-simon-7901ba223/?originalSubdomain=de
+    email: lara.simon@gesis.org
+  - name: Julian Kohne
+    orcid: 0000-0002-6710-7545
+    url: https://www.juliankohne.com/
+    email: julian.kohne@gesis.org
+  - name: Lukas Otto
+    orcid: 0000-0002-4374-6924
+    url: https://lukasotto.com/
+    email: lukas.otto@gesis.org
+date: today
+version: "v1.0"
+format: 
+  html:
+    css: ../gesis_style.css
+    embed-resources: true
+    toc: true
+    toc-depth: 4
+    toc-location: right
+    toc-title: Inhalt
+    lightbox: true
+    number-sections: true
+    number-depth: 2
+    output-file: index.html
+editor: source
+---
+
+<!-- Place this directly in the document body -->
+<img src="../img/gesis_logo.png" class="logo" alt="Logo">
+
+---------------------------------
+### 1. Einführung in das AppKit
+
+Um Ihnen den Einstieg in das GESIS AppKit so einfach wie möglich zu machen, haben wir alle wichtigen Informationen für Sie zusammengestellt.  
+
+#### 1.1. Was ist das GESIS AppKit?
+
+*Das GESIS AppKit bietet Ihnen eine umfassende Datenerhebungsinfrastruktur für Umfrage- und (perspektivisch) Sensordaten auf Smartphones. Es umfasst ein interaktives Dashboard zur Studienkonzeption und Verwaltung der Teilnehmenden sowie die App GESIS SMART für Android- und iOS-Geräte, die sich Ihre Studienteilnehmende über den Google Playstore bzw. den Appstore installieren können.*
+
+*Das GESIS AppKit ermöglicht in erster Linie, mobile Umfragen mit komplexen, zeitbasierten Ausspielplänen zu erstellen und dient damit der Umsetzung intensiver Längsschnittstudien im Sinne von Ambulatory Assessment, Experience Sampling oder Ecological Momentary Assessments.* 
+
+#### 1.2. Über dieses Handbuch
+
+Dieses Handbuch soll Sie in der Verwendung des GESIS AppKits unterstützen. Im Folgenden werden alle Funktionalitäten des GESIS AppKits beschrieben. Dabei orientieren wir uns an den entsprechenden Menüpunkten im Webportal. Bitte achten Sie besonders auf folgende Elemente:
+
+::: {.callout-important title="Achtung"}
+Das GESIS AppKit befindet sich in der Entwicklung. Mit dieser Kategorie heben wir Einstellungen hervor, die sich ggf. nicht selbst erklären und in der Folge zu Fehlermeldungen führen sollten – es aber (noch) nicht immer auch tun.
+:::
+
+::: {.callout-warning title="Wichtig"}
+Mit dieser Kategorie heben wir Einstellungen hervor, die bei der Umsetzung einer eigenen Studie mit dem GESIS AppKit unbedingt genau beachtet werden müssen, um technisch bedingte Fehler in der Erhebung zu vermeiden.
+:::
+
+::: {.callout-tip title="Best Practice"}
+Hier erläutern wir den Nutzen bestimmter Einstellungen und geben weiterführend Empfehlungen für erfolgreiche Datenerhebungen.
+:::
+
+Dieses Handbuch ist work-in-progress. Wir bemühen uns, das Handbuch aktuell zu halten. Sollte etwas unklar oder falsch beschrieben sein, freuen wir uns über einen entsprechenden Hinweis an [appkit\@gesis.org](mailto:appkit@gesis.org).\
+
+### 2. Zugang zum GESIS AppKit
+
+#### 2.1 Registrieren:
+
+::: callout-info
+*Das GESIS AppKit wird Personen, die an einer öffentlichen Forschungseinrichtung tätig sind, kostenfrei zu Forschungswecken zur Verfügung gestellt. Falls Sie nicht zu dieser Zielgruppe gehören, kontaktieren Sie uns gerne, um weitere Optionen zu besprechen.*
+:::
+
+-   Schreiben Sie eine Mail an [appkit\@gesis.org](mailto:appkit@gesis.org).
+
+-   Nutzen Sie dafür Ihre institutionelle E-Mail-Adresse, um Ihre Zugehörigkeit zu einer öffentlichen Forschungseinrichtung zu bestätigen.
+
+-   Nennen Sie Ihre Funktion und beschreiben Sie kurz, wofür Sie das GESIS AppKit verwenden möchten.
+
+-   Sie erhalten von uns eine Mail mit Ihren persönlichen Zugangsdaten.
+
+#### 2.2. Einloggen:
+
+-   Sobald Sie Ihre Zugangsdaten erhalten haben, können Sie das GESIS AppKit Dashboard über Ihren Browser aufrufen
+
+-   Loggen Sie sich mit Ihrer E-Mail Adresse und dem Passwort ein.
+
+![](../img/Slide10.jpg){.lightbox}
+
+### 3. Projektübersicht
+
+Auf der **Startseite** haben Sie die Übersicht über alle Ihre Projekte.
+
+Sie können hier neue Projekte anlegen:
+
+![](../img/Slide1.jpg)
+
+Über "**create project**" können Sie neue Projekte anlegen:
+
+::: callout-caution
+Sie müssen zwingend einen Projektnamen und mindestens ein Keyword für dieses Projekt eingeben
+:::
+
+![](../img/Slide11.jpg)
+
+::: callout-information
+Keywords beziehen sich auf das Forschungsthema Ihres Projekts. Diese Keywords können von uns eingesehen werden. Wir nutzen die eingegebenen Keywords, um einen Überblick über die Verwendung des GESIS AppKits zu behalten. Darüber hinaus können Sie die Keywords natürlich auch als Label zur besseren Übersicht einsetzen. 
+:::
+
+Klicken Sie auf „**create**“, um das Projekt anzulegen. 
+
+Nachdem Sie das Projekt angelegt haben, können Sie dieses per Klick auf den Projektnamen öffnen.
+
+Sie können die Projekteigenschaften jedereit über das Stiftsymbol bearbeiten.
+
+Mit Klick auf den Papierkorb löschen Sie das Projekt. Bestätigen Sie die Löschabsicht, indem Sie den Projektnamen erneut eingeben.
+
+::: {.callout-warning title="Wichtig"}
+Ein gelöschtes Projekt wird nicht archiviert und kann nicht wieder hergestellt werden!
+:::
+
+\
+
+### 4. Projekteinstellungen
+
+Unter dem Menüpunkt "Projekteinstellungen" finden sie verschiedene Möglichkeiten, um das Projekt an Ihre Bedürfnisse anzupassen. Nachdem sich Ihre Studienteilnehmenden in der App mittels [Code](#sec-5.-teilnehmende-verwalten) in Ihr Projekt eingeloggt haben, können diese die hier vorgenommen Einstellungen in der App sehen!
+
+::: callout-info
+Diese Eigenschaften lassen sich nachträglich ändern, d.h. auch nachdem sich Teilnehmende in Ihrer Studie/Ihrem Projekt angemeldet haben. Je nach Gerät und Betriebssystem erfordert die korrekte Anzeige jedoch mitunter ein erneutes Einloggen der Teilnehmenden.
+:::
+
+#### 4.1. Layout
+
+Unter **Layout** können Sie dem Projekt einen (sprechenden) Namen geben, eine Farbe wählen, sowie ein Icon zuordnen.
+
+![](../img/Slide13.jpg)
+
+[**Projektname:**]{.underline}
+
+Bestimmen Sie hier, wie das Projekt für die Teilnehmenden heißen soll. Wir empfehlen, nur ein oder zwei kurze Wörter zu verwenden (maximal 30 Zeichen) und nur wenn unbeding nötig drei Wörter. Sie sollten nur Buchstaben verwenden und keine Sonderzeichen oder Zahlen einsetzen.
+
+[**Projektfarbe:**]{.underline}
+
+Legen Sie die Farbe fest, in der Aktionsfelder in der App hervorgehoben werden sollen. Obwohl Sie hier eine beliebige Farbe wählen können, empfehlen wir Ihnen, keine sehr grellen Farben zu verwenden (z. B. Neongelb oder Neongrün).
+
+::: {.callout-important title="Achtung"}
+Die Wahl einer geeigneten Farbe erweist sich mitunter als schwierig. Bitte prüfen Sie die Lesbarkeit der gewählten Farbe unbedingt in der App im Hell- ebenso wie im Dunkelmodus. Farbecodes, die unserer Erfahrung nach gut funktionieren sind #,…, #... oder #.....
+:::
+
+[**Icon:**]{.underline}
+
+Laden Sie ein Logo für Ihr Forschungsprojekt hoch. Das Logo wird den Teilnehmenden in der App oben auf dem Startbildschirm angezeigt, nachdem sie sich in Ihrem Projekt angemeldet haben. Wichtig ist, dass durch die Wahl des Bildes hier das Kachelbild der App im Menü der App nicht verändert wird, weil dieses für alle Forschungsteilnehmenden in allen Projekten gleich ist.
+
+::: {.callout-important title="Achtung"}
+Bei den Icons muss es sich um .png-Dateien mit [genau]{.underline} 1024 x 1024 Pixeln handeln.
+:::
+
+#### 4.2. In-App Texte
+
+Unter dem Abschnitt "In-App Texte" müssen Sie-, verschiedene Texte anpassen, die den Studienteilnehmenden direkt in der App angezeigt werden.
+
+::: callout-caution
+Sie können diese Felder nicht leer lassen!
+:::
+
+[**Login-Text**]{.underline}
+
+Dieser Text wird in der App ergänzend zum persönlichen Teilnahmecode an zwei Stellen angezeigt: Zum einen direkt nach Login in Ihre Studie, zum anderen bei der Auswahl des Menüs "Dein Teilnahmecode" unten links auf der Startseite. Nutzen Sie diesen Text, um die Funktion des Codes zu erläutern und studienspezifische Hinweise zu geben.
+
+*Beispiel:* *Dies ist Ihr persönlicher Teilnahmecode für die Nutzung der App. Bitte machen Sie einen Screenshot oder bewahren Sie den Code außerhalb des Smartphones sicher auf. Sie benötigen diesen Code, um sich erneut in die Studie einloggen zu können.*
+
+![](../img/Slide7.jpg)
+
+[**Home Text**]{.underline}
+
+Dieser Text wird den Studienteilnehmenden dauerhaft auf dem Startbildschirm in der App angezeigt. Sie können diesen Text frei an Ihre Bedarfe anpassen und zum Beispiel Hinweise zur Bedienung der App oder den Studienablauf geben
+
+::: callou-tip
+Sie können Emojis verwenden, um die Ansprache persönlicher zu gestalten. Emojis können Sie zum Beispiel auf dieser Seite <https://getemoji.com/> kopieren und direkt in die Textfelder des GESIS AppKits einfügen.
+:::
+
+***Willkommen zu unserer Studie! 👋***
+
+*Über die Inbox 📋 gelangen Sie zu den Fragebögen. Wenn ein oder mehrere Fragebögen unbeantwortet sind, dann wird das mit der kleinen Zahl an der Inbox angezeigt. Wir bitten Sie, diese Umfragen immer zeitnah zu beantworten.*
+
+*Wir bedanken uns, dass Sie unsere Forschung durch Ihre Teilnahme unterstützen 👍!* 
+
+[**Push Text**]{.underline}
+
+Die App GESIS SMART sendet aktive Push-Benachrichtigungen, wenn ein neuer Fragebogen zum Ausfüllen bereit ist. Dazu müssen die Teilnehmenden jedoch je nach Geräteeinstellungen Push-Benachrichtigungen erlauben. Nutzen Sie diesen Text, um studienspezifisch zu erläutern, warum diese Berechtigungen für das Gelingen der Studie notwendigen sind.
+
+*Beispiel: Bitte erlauben Sie das Senden von Push-Benachrichtigungen, wenn ein neuer Fragebogen für Sie bereitsteht. Diese Form der Benachrichtigung ist für unsere Forschung sehr wichtig.*
+
+[**Inbox Titel und Text**]{.underline}
+
+Die Inbox ist der Ort, an dem die Fragebögen zur Verfügung gestellt werden. Sie können die Bezeichnung der Inbox anpassen und das Inbox-Feld nutzen, um studienspezifische Hinweise zu geben.
+
+***Hier warten Ihre Fragebögen!** ✍️*
+
+*Wenn rechts neben dem Fragebogen "Beantworten" steht, dann haben Sie diesen Fragebogen noch nicht ausgefüllt und können gerne loslegen. Wenn Sie den Fragebogen bereits abgeschlossen haben, dann lässt er sich nicht mehr öffnen.*
+
+![](../img/Slide9.jpg)
+
+#### 4.3. Privacy
+
+Zuletzt definieren Sie unter dem Reiter Privacy die Datenschutzrichtlinien für Ihr Projekt. Dieser wird den Studienteilnehmenden beim erstmaligen Öffnen der App angezeigt und ist später in der App über den Menüpunk "Datenschutz" zugänglich.
+
+![](../img/Slide8.jpg)
+
+::: {.callout-important title="Achtung"}
+Es ist wichtig, dass Sie ein Impressum anlegen, damit Ihre Teilnehmer\*innen die verantwortlichen Institute und Personen identifizieren können.
+:::
+
+\
+
+### 5. Teilnehmende verwalten {#sec-5.-teilnehmende-verwalten}
+
+Das GESIS AppKit erlaubt die eindeutige Identifizierung Ihrer Studienteilnehmenden über den „Personal Participant Code“. Der „Personal Participant Code“ kann von Studienteilnehmenden nach erstmaligem Login in der App im Menüpunkt „Dein Teilnahmecode“ eingesehen werden. Mit dem Personal Participant Code können sich Studienteilnehmende zudem erneut in das Projekt einloggen, sollte es zu einem absichtlichen oder unabsichtlichen Logout während der Studienzeit kommen. Der Personal Participant Code ist zudem immer Teil des Datenexports.
+
+Für das erstmalige Einloggen der Teilnehmenden (Onboarding) in Ihre Studie bietet das GESIS AppKit zwei Optionen, die ein einfaches Verknüpfen der Teilnehmenden mit verschiedenen Rekrutierungsarmen/ -orten oder anderen Studienteilen ermöglichen. 
+
+#### 5.1. Projektspezifische Login-Codes {#Login-Codes}
+
+Studienteilnehmende, die die GESIS SMART App installiert haben, müssen Ihrem im GESIS AppKit Dashboard angelegten Projekt zugeordnet werden. Dies erfolgt über einen projektspezifischen Login-Code, den die Teilnehmenden beim erstmaligen Öffnen der App eingeben. Das GESIS AppKit unterscheidet zwei Arten von Codes: Generische Login-Codes sowie personalisierte Login-Codes.
+
+##### [5.1.1. Generischer Login-Code:]{.underline}
+
+-   Der generische Login-Code dient der Zuordnung von Ihnen vorab unbekannten Teilnehmenden zu Ihrem Forschungsprojekt.
+
+-   Bei Eingabe dieses Codes in der App wird automatisch der eindeutige persönlicher Teilnahmecode (Personal Participant Code) erzeugt. Dieser Teilnahmecode kann in der Folge zum Wiedereinloggen in das Projekt genutzt werden. 
+
+-   Über die Schaltfläche „Generischen Login Code anlegen“ gelangen Sie zu einer Eingabemaske.
+
+-   Geben Sie hier einen beliebigen Code ein. Dieser Code kann Buchstaben sowie Zahlen enthalten. Sollte der Code bereits von einem anderen Projekt verwendet werden, so erhalten Sie eine entsprechende Fehlermeldung. 
+
+-   Legen Sie zudem fest, wie viele Teilnehmende sich maximal mit diesem Login Code in Ihr Projekt einloggen können. Sie können diese Zahl u einem späteren Zeitpunkt ändern.
+
+-   Zuletzt können Sie den Code aktiv oder inaktiv schalten. Ein aktiver generischer Code erlaubt, dass sie weiterhin Teilnehmende mit diesem Code in Ihre Studie einloggen (solange die Maximalzahl nicht ausgeschöpft ist). Setzen Sie den Code auf „inaktiv“, so können keine neuen Teilnehmenden mehr in die Studie gelangen. Bereits registrierte Teilnehmende sind davon nicht betroffen. Sie werden nicht ausgeloggt, erhalten weiterhin Fragebögen (falls geplant) und können sich mit Ihrem „Personal Participant Code“ einloggen.
+
+-   Sie können beliebig viele generische Codes für Ihre Studie erzeugen.
+
+::: {.callout-tip title="Best Practice"}
+Ein generischer Login-Code könnte verwendet werden, um Kund\*innen zweier Bioläden mittels Vor-Ort-Aushang direkt in die App zu rekrutieren. In diesem Fall legen Sie zwei generische Codes an (BIOLADEN1, BIOLADEN2) und platzieren diese auf den jeweiligen Aushängen. So können Sie später im Datensatz nachvollziehen, welcher Teilnehmende Kund\*in welches Bioladens ist. Sie können diese Codes zudem zur Gruppierung nutzen, um Fragebögen(varianten) nur an diese Gruppe auszuspielen.
+:::
+
+##### [*5.1.2. Personalisierter Login-Code (coming soon)*]{.underline}
+
+-   Der personalisierte Login-Code dient der Zuordnung von vorab bekannten Teilnehmenden zu Ihrem Forschungsprojekt.
+
+-   Der personalisierte Login-Code entspricht dem „Personal Participant Code“.
+
+-   Das Nutzen dieser Option führt dazu, dass eine bestimmte Anzahl an persönlichen Teilnahmecodes generiert und für Ihr Projekt vorgehalten wird. Die Verknüpfung der persönlichen Teilnahmecodes mit Ihrem spezifischen Projekt erfolgt dabei anders als bei generischen Login-Codes unbemerkt im Hintergrund.
+
+-   Über die Schaltfläche „Gruppe an personalisierten Login-Codes erzeugen“ gelangen Sie zu einer Eingabemaske.
+
+-   Geben Sie hier der Gruppe an zu erzeugenden Codes einen sprechenden Namen. Dieser ist nur für Sie sichtbar und kann später zum Ausspielen der Fragebögen verwendet werden.
+
+-   Wählen Sie die Anzahl an zu generierenden Codes.
+
+-   Wählen Sie, ob die Gruppe an personalisierten Codes „aktiv“ oder „inaktiv“ gesetzt werden soll. Eine aktive Gruppe an personalisierten Login-Codes erlaubt, dass sie Teilnehmende mit einem zu dieser Gruppe gehörenden personalisierten Code in Ihre Studie einloggen. Setzen Sie den Code auf „inaktiv“, so können sich keine weiteren Teilnehmenden mehr initial in die Studie einloggen. Bereits registrierte Teilnehmende sind davon jedoch nicht betroffen: Sie werden nicht ausgeloggt, erhalten weiterhin Fragebögen (falls geplant) und können sich mit Ihrem „Personal Participant Code“ (identisch mit dem personalisierten Login-Code) einloggen.
+
+-   Zuletzt exportieren Sie die Gruppe an personalisierten Login-Codes, indem Sie XX (anpassen wenn Layout feststeht).
+
+-   Die können beliebig viele Gruppen personalisierter Codes für Ihre Studie erzeugen.
+
+Ein personalisierter Login-Code könnte verwendet werden, wenn Sie Teilnehmende aus einem bestehenden Panel zur Teilnahme an einem App-basierten Studienteil einladen wollen und frühere Angaben der Teilnehmenden mit den neu zu erhebenden Daten verknüpfen wollen (Einwilligung im Sinne des Datenschutzes vorausgesetzt!). In diesem Fall bietet es sich an, zunächst eine entsprechende Anzahl an personalisierten Login-Codes im GESIS AppKit zu generieren und zu exportieren. Im Anschluss lassen sich diese Codes oftmals in Ihr Umfragetool importieren, so dass Sie Ihren bereits bekannten Studienteilnehmenden individuell einen persönlichen Login-Code ausspielen können. In diesem Fall sollten Sie sicherstellen, dass Sie die Zuordnung des personalisierten Codes im Datenexport des Umfragetools abspeichern.\
+
+#### 5.2. Monitoring der Teilnehmenden
+
+Unter diesem Reiter finden Sie ein Dashboard, das einen Überblick über Teilnehmende gibt, die sich erfolgreich in Ihre Studie/Ihr Projekt eingeloggt haben.
+
+-   In der ersten Spalte sehen Sie den „Personal Participant Code“, der Teilnehmende in Ihrer gesamten Studie eindeutig identifiziert.
+
+-   In der zweiten Spalte sehen Sie, auf welchem Weg diese\*r Teilnehmende in Ihre Studie gelangt ist. Im Fall eines generischen Login-Codes wird hier entsprechend der Name des generischen Login-Codes aufgeführt. Im Fall eines personalisierten Logins finden Sie hier den Namen der Gruppe an personalisierten Login-Codes, den Sie beim Erstellen der Codes vergeben haben (siehe Abschnitt 5.1).
+
+-   Die dritte Spalte zeigt den Registrierungszeitpunkt als Kombination aus Datum und Uhrzeit.
+
+Die Tabelle ist rückwärts chronologisch sortiert. In der obersten Zeile ist der\*die Studienteilnehmende aufgeführt, die sich zuletzt erstmalig in Ihr Projekt eingeloggt hat. Erneute Logins per Personal Participant Code werden in dieser Tabelle nicht berücksichtigt.\
+
+### 6. Fragebögen erstellen und versenden
+
+In diesem Menü erstellen Sie Fragen/Items, bündeln diese zu Fragebögen und legen die Bedingungen für das Versenden einzelner Items oder gebündelter Items (Container) fest.
+
+::: {.callout-important title="Achtung"}
+Das AppKit hat zum jetzigen Zeitpunkt noch kein Codebook implementiert. Es ist nicht möglich, alle angelegten Items aus dem GESIS AppKit zu exportieren. Um bei der späteren Auswertung der Daten die genauen Fragetexte, Antwortoptionen sowie No-Response Optionen den numerischen Werten zuordnen zu können, empfehlen wir, alle Eingaben außerhalb des GESIS AppKits, zum Beispiel in einer Word- oder Exceldatei zu notieren.
+:::
+
+#### 6.1. Erstellen
+
+Das GESIS AppKit ermöglicht das Erstellen von Fragebogen-Items vom Typ "Single Choice" und "Multiple Choice", "Ratingskalen/Likertskalen", "freie Texteingabe" sowie "numerische Eingabe". Darüber hinaus können Sie den Teilnehmenden das Hochladen von Bildern ermöglichen ("Datei-Upload") und einfache Verzweigungslogiken (JA/NEIN) erstellen.
+
+Die angelegten Items können Sie mittels des Item-Typs "[Container](#Container)" bündeln und so für das [Versenden](#sec-7.-fragebögen-versenden) vorbereiten.
+
+##### 6.1.1. Items anlegen
+
+An dieser Stelle haben Sie die Möglichkeit, verschiedene Fragetypen zu erstellen. Sie können entweder einzelne Fragen anlegen oder Fragen in einem [Container](#Container) zusammenfassen.
+
+***Likert Skala:***
+
+Nehmen Sie folgende Einstellungen vor:
+
+-   Wählen Sie einen Variablennamen. Dieser dient im späteren Export als Item-ID und muss daher eindeutig sein. Sollten Sie den Namen bereits vergeben haben, wir das GESIS AppKit eine entsprechende Warnmeldung anzeigen.
+
+-   Formulieren Sie den Item-Text. Sie können Formatierungen vornehmen, indem Sie die angebotenen Optionen nutzen. Eingegebene Zeilenumbrüche werden in der Darstellung in der App übernommen.
+
+-   Definieren Sie die Skalenbreite. Unter „Minimum“ tragen Sie den geringsten, unter „Maximum“ den höchsten numerischen Skalenwert ein. Für eine 5-stufige Likertskala also zum Beispiel „1“ bei „Minimum“ und „5“ bei Maximum.
+
+-   Beschriften Sie optional bis zu drei Skalenpunkte. Denken Sie daran, diese kurz zu halten, damit sie auch bei kleiner Bildschirmgröße gut dargestellt werden können.
+
+-   Fügen Sie beliebig viele No-Response-Optionen hinzu. Diese werden optisch abgegrenzt unter der Frage dargestellt.\
+    Wichtig: No-Response Optionen **muss** ein negativer Wert zugewiesen werden. Der Wert „Null“ ist nicht zulässig.
+
+-   Klicken Sie auf „Speichern“. Setzen Sie das Anlegen weiterer Items oder Fragen ggf. fort, indem Sie im Menü „Erstellen“ erneut auf „Fragebogen erstellen“ klicken.
+
+::: {.callout-important title="Achtung"}
+Kommt es beim Speichern zu einer Fehlermeldung ist es zuverlässiger, den Dialog zum Eingeben des Items neu zu starten, indem über „Fragebogen erstellen“ die Eingabe frisch begonnen wird.
+:::
+
+![](../img/Slide2.jpg)
+
+***Single- und Multiple Choice:***
+
+![](../img/Slide3.jpg)
+
+Nehmen Sie folgende Einstellungen vor:
+
+-   Wählen Sie einen Variablennamen. Dieser dient im späteren Export als Item-ID und muss daher eindeutig sein. Sollten Sie den Namen bereits vergeben haben, wir das GESIS AppKit eine entsprechende Warnmeldung anzeigen.
+
+-   Formulieren Sie den Frage-Text. Sie können Formatierungen vornehmen, indem Sie die angebotenen Optionen nutzen. Eingegebene Zeilenumbrüche werden in der Darstellung in der App übernommen.
+
+-   Legen Sie Antwortoptionen an. Vergeben Sie dazu einen (positiven) numerischen Wert und ein Label für die Antwort. Die Antworten lassen sich per Drag&Drop in der Reihenfolge verändern und über das Papierkorb-Symbol löschen. Die vergebenen numerischen Werte müssen dabei ggf. manuell angepasst werden.
+
+-   Fügen Sie beliebig viele No-Response-Optionen hinzu. Diese werden optisch abgegrenzt unter der Frage dargestellt.
+
+-   Wichtig: No-Response Optionen **muss** ein negativer Wert zugewiesen werden. Der Wert „Null“ ist nicht zulässig.
+
+-   Klicken Sie auf „Speichern“. Setzen Sie das Anlegen weiterer Items oder Fragen ggf. fort, indem Sie im Menü „Erstellen“ erneut auf „Fragebogen erstellen“ klicken.
+
+::: {.callout-important title="Achtung"}
+Kommt es beim Speichern zu einer Fehlermeldung ist es zuverlässiger, den Dialog zum Eingeben des Items neu zu starten, indem über „Fragebogen erstellen“ die Eingabe frisch begonnen wird.
+:::
+
+***Freitextfrage:***
+
+![](../img/Slide4.jpg)
+
+Nehmen Sie folgende Einstellungen vor:
+
+-   Wählen Sie einen Variablennamen. Dieser dient im späteren Export als Item-ID und muss daher eindeutig sein. Sollten Sie den Namen bereits vergeben haben, wir das GESIS AppKit eine entsprechende Warnmeldung anzeigen.
+
+-   Formulieren Sie den Frage-Text. Sie können Formatierungen vornehmen, indem Sie die angebotenen Optionen nutzen. Eingegebene Zeilenumbrüche werden in der Darstellung in der App übernommen.
+
+-   Fügen Sie beliebig viele No-Response-Optionen hinzu. Diese werden optisch abgegrenzt unter der Frage dargestellt.
+
+-   Wichtig: No-Response Optionen **muss** ein negativer Wert zugewiesen werden. Der Wert „Null“ ist nicht zulässig.
+
+-   Klicken Sie auf „Speichern“. Setzen Sie das Anlegen weiterer Items oder Fragen ggf. fort, indem Sie im Menü „Erstellen“ erneut auf „Fragebogen erstellen“ klicken.
+
+::: {.callout-important title="Achtung"}
+Kommt es beim Speichern zu einer Fehlermeldung ist es zuverlässiger, den Dialog zum Eingeben des Items neu zu starten, indem über „Fragebogen erstellen“ die Eingabe frisch begonnen wird.
+:::
+
+***Numerische Abfrage:***
+
+![](../img/Slide5.jpg)
+
+Nehmen Sie folgende Einstellungen vor:
+
+-   Wählen Sie einen Variablennamen. Dieser dient im späteren Export als Item-ID und muss daher eindeutig sein. Sollten Sie den Namen bereits vergeben haben, wir das GESIS AppKit eine entsprechende Warnmeldung anzeigen.
+
+-   Formulieren Sie den Frage-Text. Sie können Formatierungen vornehmen, indem Sie die angebotenen Optionen nutzen. Eingegebene Zeilenumbrüche werden in der Darstellung in der App übernommen.
+
+-   Geben Sie die Spannbreite an numerischen Werten an, die eingegeben werden dürfen.
+
+-   Fügen Sie beliebig viele No-Response-Optionen hinzu. Diese werden optisch abgegrenzt unter der Frage dargestellt.
+
+-   Wichtig: No-Response Optionen **muss** ein negativer Wert zugewiesen werden. Der Wert „Null“ ist nicht zulässig.
+
+-   Klicken Sie auf „Speichern“. Setzen Sie das Anlegen weiterer Items oder Fragen ggf. fort, indem Sie im Menü „Erstellen“ erneut auf „Fragebogen erstellen“ klicken.
+
+::: {.callout-important title="Achtung"}
+Kommt es beim Speichern zu einer Fehlermeldung ist es zuverlässiger, den Dialog zum Eingeben des Items neu zu starten, indem über „Fragebogen erstellen“ die Eingabe frisch begonnen wird.
+:::
+
+#### Foto hochladen:
+
+Da der Upload auch fehlschlagen kann, ist es zu empfehlen No-response Optionen zu verwenden.Über diesen Fragetypen können Teilnehmende innerhalb eines Fragebogens ein Bild hochladen. Sie können dazu direkt auf ihre Kamera zugreifen, ein Foto machen und dieses Foto unmittelbar hochladen. Alternativ erfolgt das Hochladen per Zugriff auf die Galerie. In beiden Fällen werden Nutzende aufgefordert, der App entsprechende Berechtigungen zu erteilen.
+
+![](../img/Slide12.jpg)
+
+Nehmen Sie folgende Einstellungen vor:
+
+-   Wählen Sie einen Variablennamen. Dieser dient im späteren Export als Item-ID und muss daher eindeutig sein. Sollten Sie den Namen bereits vergeben haben, wir das GESIS AppKit eine entsprechende Warnmeldung anzeigen.
+
+-   Formulieren Sie den Frage-Text. Sie können Formatierungen vornehmen, indem Sie die angebotenen Optionen nutzen. Eingegebene Zeilenumbrüche werden in der Darstellung in der App übernommen.
+
+-   Fügen Sie beliebig viele No-Response-Optionen hinzu. Diese werden optisch abgegrenzt unter der Frage dargestellt.
+
+-   Wichtig: No-Response Optionen **muss** ein negativer Wert zugewiesen werden. Der Wert „Null“ ist nicht zulässig.
+
+-   Klicken Sie auf „Speichern“. Setzen Sie das Anlegen weiterer Items oder Fragen ggf. fort, indem Sie im Menü „Erstellen“ erneut auf „Fragebogen erstellen“ klicken.
+
+::: {.callout-important title="Achtung"}
+Kommt es beim Speichern zu einer Fehlermeldung ist es zuverlässiger, den Dialog zum Eingeben des Items neu zu starten, indem über „Fragebogen erstellen“ die Eingabe frisch begonnen wird.
+:::
+
+::: callout-caution
+Wenn Sie innerhalb eines Containers mehrere Fotos hochladen lassen wollen, legen Sie für jeden Upload unbedingt ein neues Item an. Bei mehrfacher Verwendung desselben Items innerhalb eines Containers kann es ansonsten vorkommen, dass das zuerst hochgeladene Foto darauf folgende Uploads verhindert.  
+:::
+
+::: {.callout-tip title="Best Practice"}
+Da bei einem Datei-Upload sowohl technische als auch nutzerseitig Probleme auftrete können, empfiehlt sich eine Differenzierung der potenziell fehlenden Werte über No-Response-Optionen. Bieten Sie zum Beispiel sowohl die Option "Ich möchte kein Bild hochladen" als auch die Option "Beim Hochladen tritt ein technisches Problem auf" an.
+:::
+
+***Verzweigung mittels Continue-Stop***
+
+Das Element Continue-Stop ermöglicht es Ihnen, einfache Verzweigungen in Ihre Fragebögen einzubauen. Dieser Fragetyp aktiviert automatisch eine Ja/Nein Option. Bei der Auswahl von "Nein" wird der Fragebogen beendet. Bei der Auswahl von "Ja" wird er fortgesetzt. Formulieren Sie den Text entsprechend als Ja-Nein Frage.
+
+![](../img/Slide6.jpg)
+
+Nehmen Sie folgende Einstellungen vor:
+
+-   Wählen Sie einen Variablennamen. Dieser dient im späteren Export als Item-ID und muss daher eindeutig sein. Sollten Sie den Namen bereits vergeben haben, wir das GESIS AppKit eine entsprechende Warnmeldung anzeigen.
+
+-   Formulieren Sie den Frage-Text **als Ja-Nein-Frage**. Sie können Formatierungen vornehmen, indem Sie die angebotenen Optionen nutzen. Eingegebene Zeilenumbrüche werden in der Darstellung in der App übernommen.
+
+-   Für diesen Fragentyp kann keine No-Response-Option gewählt werden.  
+
+-   Klicken Sie auf „Speichern“. Setzen Sie das Anlegen weiterer Items oder Fragen ggf. fort, indem Sie im Menü „Erstellen“ erneut auf „Fragebogen erstellen“ klicken.
+
+::: {.callout-important title="Achtung"}
+Kommt es beim Speichern zu einer Fehlermeldung ist es zuverlässiger, den Dialog zum Eingeben des Items neu zu starten, indem über „Fragebogen erstellen“ die Eingabe frisch begonnen wird.
+:::
+
+#### 6.1.2. Items bündeln (Container) {#Container}
+
+Der Item-Typ „Container“ dient dem Bündeln einzelner Items zu Fragebögen. Sie können die Container-Funktion nutzen, um einzelne Items (insbesondere vom Typ „Likert“ thematisch zu bündeln, sowie um Items, zu Containern gebündelte Items oder Fragen zu Fragebögen zusammenzustellen. Letzteres erleichtert das spätere Versenden.
+
+Nehmen Sie folgende Einstellungen vor:
+
+-   Wählen Sie einen Variablennamen. Dieser dient im späteren Export als Item-ID und muss daher eindeutig sein. Sollten Sie den Namen bereits vergeben haben, wir das GESIS AppKit eine entsprechende Warnmeldung anzeigen.
+
+-   Wählen Sie „Neues Item erstellen“, um direkt ein einzelnes Item anzulegen und diesem Container hinzuzufügen.
+
+-   Wählen Sie „Bestehendes Item hinzufügen“, um ein zuvor angelegtes Item oder Container hinzuzufügen.
+
+-   Haben Sie mehrere Items ausgewählt, können Sie die Reihenfolge beliebig per Drag&Drop verändern.
+
+::: callout-caution
+Wenn Sie Fragen innerhalb eines Containers wiederholt werden möchten, müssen Sie das Element erneut anlegen. Dies gilt insbesondere für das Hochladen von Fotos und Freitexteingaben.
+:::
+
+::: {.callout-important title="Achtung"}
+Beachten Sie, dass Items, die hinter dem Itemtyp „Continue-Stop“ platziert werden, nur denjenigen Teilnehmenden angezeigt werden, die die Frage mit „Ja“ beantworten.
+:::
+
+-   Durch Klick auf das Papierkorb-Symbol lassen sich Items entfernen.
+
+-   Klicken Sie auf „Speichern“. Setzen Sie das Anlegen weiterer Items oder Fragen ggf. fort, indem Sie im Menü „Erstellen“ erneut auf „Fragebogen erstellen“ klicken.
+
+::: {.callout-important title="Achtung"}
+Kommt es beim Speichern zu einer Fehlermeldung ist es zuverlässiger, den Dialog zum Eingeben des Items neu zu starten, indem über „Fragebogen erstellen“ die Eingabe frisch begonnen wird.
+:::
+
+\
+
+#### 6.2. Fragebögen versenden {#sec-7.-fragebögen-versenden}
+
+In diesem Menü planen Sie das Versenden der zuvor angelegten Items und/oder Container (im Folgenden als „Fragebogen“ bezeichnet). Folgende zeitliche Optionen stehen zum Versenden zur Verfügung:
+
+-   Jetzt: Sendet unmittelbar nach dem Veröffentlichen einen Fragebogen.
+
+-   Direkt nach erstmaligem Einloggen: Sendet einen Fragebogen unmittelbar nachdem sich ein Studienteilnehmender erstmalig in die App eingeloggt hat.
+
+-   An bestimmtem Zeitpunkt(en): Sendet einen Fragebogen (einmalig/mehrmals) zu fixen oder zufälligen Zeitpunkten als Kombination aus Datum und Uhrzeit.
+
+Für alle Fragebögen können Sie festlegen, welche Gruppen an Teilnehmenden diesen erhalten soll.
+
+![](../img/Slide15.jpg)
+
+##### 6.2.1. Jetzt versenden
+
+Nehmen Sie folgende Einstellungen vor:
+
+-   Geben Sie dem auszuspielenden Fragebogen einen Titel. Dieser Titel wird den Teilnehmenden in der App angezeigt.
+
+::: {.callout-tip title="Best Practice"}
+Sie können im Titel Emojis verwenden. Auf diese Weise können Sie die Ansprache der Teilnehmenden persönlicher gestalten oder den Wiedererkennungswert eines bestimmten Fragebogens in der Inbox erhöhen. Geeignete Emojis finden Sie zum Beispiel hier: <https://getemoji.com/>
+:::
+
+-   Wählen Sie das Item, das versendet werden soll. Sie können hier einzelne Items sowie zu Containern gebündelte Items wählen.
+
+-   Wählen Sie die Gruppe an Zugangscodes aus, die diesen Fragebogen erhalten sollen. Für weitere Informationen unter Abschnitt [5.1. Projektspezifische Login-Codes](#Login-Codes).  
+
+-   Wählen Sie unter „Zeitpunkt“ die Option „Jetzt versenden“.
+
+-   Speichern Sie den Fragebogen. Sie können die Einstellungen ändern, solange der Fragebogen nicht veröffentlich ist.
+
+-   Veröffentlichen Sie den Fragebogen über die nach dem Speichern eingeblendete Schaltfläche „Veröffentlichen“. Erst dann wird der Fragebogen versendet. Ein Ändern der Einstellungen ist nun nicht mehr möglich.
+
+##### 6.2.2. Direkt nach erstmaligen Einloggen versenden
+
+Nehmen Sie folgende Einstellungen vor:
+
+-   Geben Sie dem auszuspielenden Fragebogen einen Titel. Dieser Titel wird den Teilnehmenden in der App angezeigt.
+
+::: {.callout-tip title="Best Practice"}
+Sie können im Titel Emojis verwenden. Auf diese Weise können Sie die Ansprache der Teilnehmenden persönlicher gestalten oder den Wiedererkennungswert eines bestimmten Fragebogens in der Inbox erhöhen. Geeignete Emojis finden Sie zum Beispiel hier: <https://getemoji.com/>
+:::
+
+-   Wählen Sie das Item, das versendet werden soll. Sie können hier einzelne Items sowie zu Containern gebündelte Items wählen.
+
+-   Wählen Sie die Gruppe an Zugangscodes aus, die diesen Fragebogen erhalten sollen. Für weitere Informationen unter Abschnitt [5.1. Projektspezifische Login-Codes](#Login-Codes). 
+
+-   Wählen Sie unter „Zeitpunkt“ die Option „Direkt nach erstmaligem Einloggen versenden“.
+
+-   Speichern Sie den Fragebogen. Sie können die Einstellungen ändern, solange der Fragebogen nicht veröffentlich ist.
+
+-   Veröffentlichen Sie den Fragebogen über die nach dem Speichern eingeblendete Schaltfläche „Veröffentlichen“. Erst dann wird der Fragebogen versendet. Ein Ändern der Einstellungen ist nun nicht mehr möglich.
+
+##### 6.2.3. An bestimmtem Zeitpunkt(en) versenden
+
+Nehmen Sie folgende Einstellungen vor:
+
+-   Geben Sie dem auszuspielenden Fragebogen einen Titel. Dieser Titel wird den Teilnehmenden in der App angezeigt.
+
+::: {.callout-tip title="Best Practice"}
+Sie können im Titel Emojis verwenden. Auf diese Weise können Sie die Ansprache der Teilnehmenden persönlicher gestalten oder den Wiedererkennungswert eines bestimmten Fragebogens in der Inbox erhöhen. Geeignete Emojis finden Sie zum Beispiel hier: <https://getemoji.com/>
+:::
+
+-   Wählen Sie das Item, das versendet werden soll. Sie können hier einzelne Items sowie zu Containern gebündelte Items wählen.
+
+-   Wählen Sie die Gruppe an Zugangscodes aus, die diesen Fragebogen erhalten sollen. Für weitere Informationen siehe Abschnitt [5.1. Projektspezifische Login-Codes](#Login-Codes). 
+
+    -   Wählen Sie unter „Zeitpunkt“ die Option „An bestimmten Zeitpunkt(en) versenden“.
+
+        -   Start: Wählen Sie eine der Optionen …
+
+            -   Festgelegtes Datum: Wählen Sie das gewünschte Datum mittels der Kalenderfunktion.
+
+            -   X Tage nach dem Einloggen: Legen Sie fest, wie viele Tage nach dem erstmaligen Login der Fragebogen ausgespielt werden soll. Wählen Sie „0“, wenn der Fragebogen am Tag des erstmaligen Logins versendet werden soll.
+
+        -   Notifies: Wählen Sie eine der Optionen …
+
+            -   Festgelegte Uhrzeit: Wählen Sie die gewünschte Uhrzeit. Es lassen sich beliebige Uhrzeiten durch Eintippen in das Feld wählen.
+
+            -   Zu zufälligen Zeitpunkten:
+
+                -   Number of times: Wählen Sie, wie oft der Fragebogen am gewählten Tag versendet werden soll.
+
+                -   Minimum distance: Legen Sie fest, wie viele Minuten mindestens zwischen zwei Fragebögen liegen sollen.
+
+                -   Not before: Legen Sie fest, zu welcher Uhrzeit ein Fragebogen frühestens versendet werden soll.
+
+                -   Not after: Legen Sie fest, zu welcher Uhrzeit ein Fragebogen spätestens versendet werden soll.
+
+        -   Repeats: Wählen Sie aus, ob und wenn ja in welchem Intervall der Fragebogen wiederholt werden soll.
+
+        -   Repeat interval (Y): Legen Sie das Intervall fest. Für tagesbasierte Wiederholung geben Sie zum Beispiel eine „1“ ein für tägliche Wiederholung, eine „2“ bei Wiederholung an jedem zweiten Tag, eine „7“ für wöchentliche Wiederholung.
+
+        -   Ends: Legen Sie fest, ob die Wiederholungen an einem bestimmten Datum oder nach einer bestimmten Zahl enden sollen.
+
+-   Speichern Sie den Fragebogen. Sie können die Einstellungen ändern, solange der Fragebogen nicht veröffentlich ist.
+
+-   Veröffentlichen Sie den Fragebogen über die nach dem Speichern eingeblendete Schaltfläche „Veröffentlichen“. Erst dann wird der Fragebogen versendet. Ein Ändern der Einstellungen ist nun nicht mehr möglich.
+
+##### 6.2.4. Dashboard aller angelegte und/oder versendeten Fragebögen
+
+Auf der Seite „Versenden“ werden alle terminierten Fragebögen angezeigt. Rechts sehen Sie zum einen, an welche Gruppe an Teilnehmenden der Fragebogen versendet wird/wurde.
+
+Sie sehen zudem den Status des Fragebogens:  
+
+-   Nicht veröffentlicht: Nach dem Speichern des Fragebogens unter „Fragebogen hinzufügen“ erscheint dieser in der Liste. Durch Klick auf den Eintrag gelangen Sie zu den Einstellungen, so dass Sie Änderungen vornehmen können.
+
+-   Veröffentlicht: Nach dem Veröffentlichen des Fragebogens lassen sich keine Änderungen mehr vornehmen. Fragebögen mit diesem Status werden an die ausgewählten Teilnehmenden versendet.
+
+-   Abgebrochen.
+
+Neben dem gewählten Titel des Fragebogens sehen Sie hier eine Zusammenfassung des gewählten Plans zum Versenden.
+
+Klicken Sie auf einen Eintrag, um die Fragebogen ID zu ermitteln. Diese benötigen Sie für den Export des entsprechenden Fragebogen unter „Daten exportieren“.
+
+##### 6.2.5. Gruppenbasiertes Versenden
+
+Beim Versenden der Fragebögen können Sie auswählen, an welche Teilnehmenden dieser versendet werden soll. Sie können wählen zwischen
+
+-   Alle Teilnehmende
+
+-   Durch generische Codes bestimmte Gruppen
+
+-   Durch personalisierte Codes bestimmte Gruppen
+
+-   Individuell definierte Gruppen (coming soon)
+
+### 7. Exportieren der Daten  
+
+Sobald Sie alle Daten beisammenhaben, können Sie ihre Daten als .csv file exportieren. Auch während der Datenerhebung können Sie Fragebögen exportieren, ohne dass dies die weitere Datenerhebung beeinflusst:
+
+-   Öffnen Sie das Menü „Exportieren“.
+
+-   Starten Sie einen neuen Export über die Auswahl der Schaltfläche „Neuer Export“ oben rechts.
+
+-   Geben Sie die eindeutige Fragebogen ID ein. Sie finden diese ID in der Liste an geplanten und versendeten Fragebögen unter „Versenden“, wenn Sie den entsprechenden Eintrag in der Liste anklicken (siehe auch Abschnitt: [6.2. Fragebögen versenden](#sec-7.-fragebögen-versenden)).
+
+-   Klicken Sie „Erstellen“. Der Export wird generiert (Fortschrittsanzeige in Prozent). Sobald der Export generiert wurde, wird dies durch einen grünen Haken in der Spalte "Download“ angezeigt. Klicken Sie auf den Haken, um den Export abzuschließen.
+
+-   Ein fertiger Export wird in der Liste durch das Büroklammer-Symbol angezeigt. Klicken Sie auf die Büroklammer, um den Export herunterzuladen.
+
+-   Für einen schnellen Export werden die csv-Dateien in einer TAR-Datei verpackt. Diese muss lokal zunächst entpackt werden. Nutzen Sie dazu unter Windows 10 WinZip oder eine WinZip-Alternative (zum Beispiel 7-zip). Ab Windows 11 wird das Format automatisch unterstützt.
+
+-   Wenn der heruntergeladene Fragebogen einen Foto-Upload enthielt, werden diese Fotos direkt mit exportiert und im Ordner „files“ gespeichert. Der Dateiname dient der Zuordnung zum jeweiligen Eintrag im Fragebogen.  
+
+### 8. Anreize für Teilnehmer
+
+-   Nachdem die Umfrage abgeschlossen ist, haben Sie die Möglichkeit zu entscheiden, ob Ihren Teilnehmern ein Incentive gewährt werden soll. Dazu generieren Sie unter dem Abschnitt "Incentive" einen Code, den Sie an die Teilnehmer senden können, die die Umfrage erfolgreich abgeschlossen haben. 
+
+### 9. Umfrage-Items im Überblick
+
+In diesem Kapitel finden Sie eine Anleitung zur Erstellung und Darstellung von Umfrage-Items im AppKit.
+
+Für jeden Item-Typ zeigen wir Ihnen zunächst, wie Sie das Item im AppKit anlegen und konfigurieren können. Anschließend sehen Sie, wie das Item in der App für die Teilnehmenden dargestellt wird.
+
+Diese Übersicht soll Ihnen helfen, sich mit Funktionsweise des AppKit besser besser vertraut zu machen.
+
+Um das AppKit selbst zu erkunden, können Sie den Code **"DEMOCODE**" verwenden, um sich in der App anzumelden und alle Funktionen direkt auszuprobieren.
+
+Download **GESIS Smart:**
+
+[Link PlayStore:]{.underline} <https://play.google.com/store/search?q=gesis%20smart&c=apps&hl=gsw>
+
+[Link AppStore:]{.underline} [[https://apps.apple.com/de/app/gesis-smart/id6479244351]{.underline}](https://apps.apple.com/de/app/gesis-smart/id6479244351)
+
+![](../img/Slide1.jpg)
+
+![](../img/Slide2.jpg)
+
+![](../img/Slide3.jpg)
+
+![](../img/Slide4.jpg)
+
+![](../img/Slide5.jpg)
+
+![](../img/Slide6.jpg)
+
+![](../img/Slide7.jpg)
+
+![](../img/Slide8.jpg)
+
+![](../img/Slide9.jpg)
+
+![](../img/Slide10.jpg)
+
+![](../img/Slide11.jpg)
+
+![](../img/Slide12.jpg)
+
+![](../img/Slide13.jpg)
+
+![](../img/Slide14.jpg)
+
+![](../img/Slide15.jpg)
+
+![](../img/Slide16.jpg)

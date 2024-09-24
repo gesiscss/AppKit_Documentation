@@ -1,0 +1,93 @@
+\documentclass{article}
+
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage[normalem]{ulem}
+
+% Redefine \tightlist to prevent LaTeX errors
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\setmainfont{SourceSansPro.otf}[
+    Path = fonts/,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold,
+    ItalicFont = *-It,
+    BoldItalicFont = *-BoldIt
+]
+\setsansfont{Cabin.otf}[
+    Path = fonts/,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold,
+    ItalicFont = *-Italic
+]
+
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+% Define colors used in callouts
+\definecolor{quarto-callout-important-color}{RGB}{240,135,65} % Example color for important callouts
+\definecolor{quarto-callout-warning-color}{RGB}{170,65,55}    % Example color for warning callouts
+\definecolor{quarto-callout-tip-color}{RGB}{100,175,175}      % Example color for tip callouts
+\definecolor{quarto-callout-caution-color}{RGB}{250,210,5}    % Example color for caution callouts
+
+\definecolor{quarto-callout-important-color-frame}{RGB}{240,135,65} % Example color for important callouts
+\definecolor{quarto-callout-warning-color-frame}{RGB}{170,65,55}    % Example color for warning callouts
+\definecolor{quarto-callout-tip-color-frame}{RGB}{100,175,175}      % Example color for tip callouts
+\definecolor{quarto-callout-caution-color-frame}{RGB}{250,210,5}    % Example color for caution callouts
+
+% Add other color definitions if needed
+\definecolor{darkblue}{RGB}{0,60,120}
+
+\definecolor{darkblue}{RGB}{0,60,120}
+\definecolor{yellow}{RGB}{250,210,5}
+\definecolor{orange}{RGB}{240,135,65}
+\definecolor{turquoise}{RGB}{100,175,175}
+\definecolor{rust}{RGB}{170,65,55}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[width=3cm]{img/gesis_logo.png}} 
+\renewcommand{\headrulewidth}{0pt}
+
+\usepackage{tcolorbox}
+\tcbuselibrary{listingsutf8, skins, breakable}
+
+\newtcolorbox{calloutcaution}[1][]{
+  colframe=yellow, colback=yellow!10, title={Caution},
+  #1
+}
+\newtcolorbox{calloutimportant}[1][]{
+  colframe=orange, colback=orange!10, title={Important},
+  #1
+}
+\newtcolorbox{calloutwarning}[1][]{
+  colframe=rust, colback=rust!10, title={Warning},
+  #1
+}
+\newtcolorbox{callouttip}[1][]{
+  colframe=turquoise, colback=turquoise!10, title={Tip},
+  #1
+}
+
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+
+% Use Pandoc variables for title, author, and date
+\title{$title$}       % Populated from Quarto YAML metadata
+\author{$for(author)$$author.name$$sep$ \\ $endfor$}  % List of authors from YAML
+\date{$date$}         % Populated from Quarto YAML metadata
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+% The content from the Quarto document will be injected here by Pandoc
+$body$
+
+
+\end{document}

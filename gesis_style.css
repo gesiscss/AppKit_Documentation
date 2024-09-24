@@ -1,0 +1,196 @@
+p {
+    text-align: justify;
+}
+
+.logo {
+  position: fixed;
+  top: 20px;       /* Adjust the top distance from the page */
+  left: 20px;     /* Adjust the right distance from the page */
+  width: 400px;    /* Set the width of the logo */
+  z-index: 1000;   /* Ensure it's on top of other elements */
+}
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+/* Define color variables */
+:root {
+    --dark-blue: #003C78;   /* Dark Blue */
+    --pink: #D20064;        /* Pink */
+}
+
+/* Hyperlinks */
+a {
+    color: var(--pink);        /* Pink */
+    text-decoration: none;
+}
+
+/* Author links inside any paragraph or header */
+p a,
+header a,
+.author a {
+  color: var(--dark-blue) !important; /* Force dark blue for author links */
+  text-decoration: none;   /* Remove underline for author links */
+}
+
+p a:hover,
+header a:hover,
+.author a:hover {
+  text-decoration: underline; /* Optional underline on hover */
+}
+
+
+/* General text styles */
+body, p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;          /* Regular */
+    font-size: 1em;            /* Standard body size */
+    line-height: 1.6;          /* Adjust for readability */
+    color: var(--dark-blue);   /* Dark Blue */
+    margin-bottom: 1em;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;          /* Bold */
+    color: var(--dark-blue);   /* Dark Blue */
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
+}
+
+/* Italicized text */
+em {
+    font-style: italic;
+    /* Inherit color from parent (dark blue) */
+}
+
+/* Bold text */
+strong {
+    font-weight: bold;
+    /* Inherit color from parent (dark blue) */
+}
+
+a:hover {
+    text-decoration: underline; /* Optional underline on hover */
+}
+
+/* Additional styling as needed */
+
+/* Base styles for custom callouts */
+.callout-yellow, .callout-orange, .callout-turquoise,
+.callout-rust, .callout-olive, .callout-rose, .callout-petrol {
+  border-left: 6px solid;
+  padding: 1em;
+  margin: 1.5em 0;
+  border-radius: 4px;
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+/* Yellow Callout */
+.callout-yellow {
+  border-left-color: #FAD205;
+}
+
+/* Orange Callout */
+.callout-orange {
+  border-left-color: #F08741;
+}
+
+/* Turquoise Callout */
+.callout-turquoise {
+  border-left-color: #64AFAF;
+}
+
+/* Rust Callout */
+.callout-rust {
+  border-left-color: #AA4137;
+}
+
+/* Olive Callout */
+.callout-olive {
+  border-left-color: #699E6E;
+}
+
+/* Rose Callout */
+.callout-rose {
+  border-left-color: #C873A0;
+}
+
+/* Petrol Callout */
+.callout-petrol {
+  border-left-color: #006A82;
+}
+
+/* Headings inside callouts */
+.callout-yellow h2, .callout-orange h2, .callout-turquoise h2,
+.callout-rust h2, .callout-olive h2, .callout-rose h2, .callout-petrol h2 {
+  margin-top: 0;
+  color: inherit;
+}
+
+/* Text inside callouts */
+.callout-yellow p, .callout-orange p, .callout-turquoise p,
+.callout-rust p, .callout-olive p, .callout-rose p, .callout-petrol p {
+  margin: 0.5em 0 0 0;
+}
+
+/* Define your spot colors */
+:root {
+  --yellow: #FAD205;
+  --orange: #F08741;
+  --olive: #699E6E;
+  --rust: #AA4137;
+}
+
+/* Callout - Caution (Yellow) */
+.callout-caution {
+  border-left-color: #FAD205;
+  background-color: rgba(250, 210, 5, 0.1); /* Light yellow background for the block content */
+}
+.callout-caution .callout-title {
+  background-color: #FAD205; /* Solid yellow background for the title */
+  color: #333; /* Dark text color for contrast */
+}
+
+/* Callout - Important (Orange) */
+.callout-important {
+  border-left-color: #F08741;
+  background-color: rgba(240, 135, 65, 0.1); /* Light orange background for the block content */
+}
+.callout-important .callout-title {
+  background-color: #F08741; /* Solid orange background for the title */
+  color: #fff; /* White text color for better contrast */
+}
+
+/* Callout - Warning (Rust) */
+.callout-warning {
+  border-left-color: #AA4137;
+  background-color: rgba(170, 65, 55, 0.1); /* Light rust background for the block content */
+}
+.callout-warning .callout-title {
+  background-color: #AA4137; /* Solid rust background for the title */
+  color: #fff; /* White text color for better contrast */
+}
+
+/* Callout - Tip (Turquoise) */
+.callout-tip {
+  border-left-color: #64AFAF;
+
+
+
+/* Ensure text color remains unchanged inside callouts */
+.callout-caution,
+.callout-important,
+.callout-warning,
+.callout-tip {
+  color: inherit; /* Inherit text color from parent */
+}
+
+/* Optional: Adjust callout styles for consistency */
+.callout {
+  border-left-width: 4px; /* Adjust border width if desired */
+  padding: 1em;
+  margin: 1.5em 0;
+  border-radius: 4px;
+}
