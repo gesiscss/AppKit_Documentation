@@ -1,5 +1,5 @@
 ---
-title: "GESIS AppKit - Manual"
+title: GESIS AppKit -  Manual
 downloads: [html]
 sharing: [twitter, facebook]
 bibliography: ../references.bib
@@ -24,6 +24,7 @@ date: today
 version: "v1.0"
 format: 
   html:
+    smooth-scroll: true
     css: ../gesis_style.css
     embed-resources: true
     toc: true
@@ -38,7 +39,27 @@ editor: source
 ---
 
 <!-- Place this directly in the document body -->
+<style>
+.logo {
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  width: 20vw;
+  max-width: 900px;
+  height: auto;
+  z-index: -1000;
+}
+
+/* Media query: Hide the logo when the screen is too small */
+@media screen and (max-width: 1700px) {
+  .logo {
+    display: none;  /* Hide the logo when the viewport is smaller than 500px */
+  }
+}
+</style>
+
 <img src="../img/gesis_logo.png" class="logo" alt="Logo">
+
 
 ---------------------------------
 ### 1. Einführung in das AppKit
