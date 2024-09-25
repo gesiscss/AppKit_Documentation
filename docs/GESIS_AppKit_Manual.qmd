@@ -114,7 +114,7 @@ Dieses Handbuch ist work-in-progress. Wir bemühen uns, das Handbuch aktuell zu 
 
 -   Loggen Sie sich mit Ihrer E-Mail Adresse und dem Passwort ein.
 
-![](../img/Slide 10.jpg){.lightbox}
+![](../img/Slide10.jpg){.lightbox}
 
 ### 3. Projektübersicht
 
