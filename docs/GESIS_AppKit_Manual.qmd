@@ -39,6 +39,8 @@ editor: source
 ---
 
 <!-- Place this directly in the document body -->
+
+```{=html}
 <style>
 .logo {
   position: fixed;
@@ -57,11 +59,11 @@ editor: source
   }
 }
 </style>
+```
+<img src="../img/gesis_logo.png" alt="Logo" class="logo"/>
 
-<img src="../img/gesis_logo.png" class="logo" alt="Logo">
+------------------------------------------------------------------------
 
-
----------------------------------
 ### 1. Einführung in das AppKit
 
 Um Ihnen den Einstieg in das GESIS AppKit so einfach wie möglich zu machen, haben wir alle wichtigen Informationen für Sie zusammengestellt.  
@@ -112,7 +114,7 @@ Dieses Handbuch ist work-in-progress. Wir bemühen uns, das Handbuch aktuell zu 
 
 -   Loggen Sie sich mit Ihrer E-Mail Adresse und dem Passwort ein.
 
-![](../img/Slide10.jpg){.lightbox}
+![](../img/Slide 10.jpg){.lightbox}
 
 ### 3. Projektübersicht
 
@@ -160,7 +162,7 @@ Diese Eigenschaften lassen sich nachträglich ändern, d.h. auch nachdem sich Te
 
 Unter **Layout** können Sie dem Projekt einen (sprechenden) Namen geben, eine Farbe wählen, sowie ein Icon zuordnen.
 
-![](../img/Slide13.jpg)
+![](../img/Slide14.jpg)
 
 [**Projektname:**]{.underline}
 
@@ -657,34 +659,34 @@ Download **GESIS Smart:**
 
 [Link AppStore:]{.underline} [[https://apps.apple.com/de/app/gesis-smart/id6479244351]{.underline}](https://apps.apple.com/de/app/gesis-smart/id6479244351)
 
-![](../img/Slide1.jpg)
+![](../img/All_items_Slide1.jpg)
 
-![](../img/Slide2.jpg)
+![](../img/All_items_Slide2.jpg)
 
-![](../img/Slide3.jpg)
+![](../img/All_items_Slide3.jpg)
 
-![](../img/Slide4.jpg)
+![](../img/All_items_Slide4.jpg)
 
-![](../img/Slide5.jpg)
+![](../img/All_items_Slide5.jpg)
 
-![](../img/Slide6.jpg)
+![](../img/All_items_Slide6.jpg)
 
-![](../img/Slide7.jpg)
+![](../img/All_items_Slide7.jpg)
 
-![](../img/Slide8.jpg)
+![](../img/All_items_Slide8.jpg)
 
-![](../img/Slide9.jpg)
+![](../img/All_items_Slide9.jpg)
 
-![](../img/Slide10.jpg)
+![](../img/All_items_Slide10.jpg)
 
-![](../img/Slide11.jpg)
+![](../img/All_items_Slide11.jpg)
 
-![](../img/Slide12.jpg)
+![](../img/All_items_Slide12.jpg)
 
-![](../img/Slide13.jpg)
+![](../img/All_items_Slide13.jpg)
 
-![](../img/Slide14.jpg)
+![](../img/All_items_Slide14.jpg)
 
-![](../img/Slide15.jpg)
+![](../img/All_items_Slide15.jpg)
 
-![](../img/Slide16.jpg)
+![](../img/All_items_Slide16.jpg)
