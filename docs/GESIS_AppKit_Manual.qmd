@@ -1,5 +1,5 @@
 ---
-title: GESIS AppKit -  Manual
+title: GESIS AppKit -  Documentation & User Manual
 downloads: [html]
 sharing: [twitter, facebook]
 bibliography: ../references.bib
@@ -690,3 +690,24 @@ Download **GESIS Smart:**
 ![](../img/All_items_Slide15.jpg)
 
 ![](../img/All_items_Slide16.jpg)
+
+### 10. Zitation
+
+Wenn Sie das GESIS AppKit in Ihrer Forschung verwenden und dieses Manual hilfreich fanden, freuen wir uns sehr über eine Zitation.
+Zitationen helfen uns dabei die Nutzung des AppKits zu tracken um den Service kontinuierlich zu finanzieren und kostenfrei anbieten zu können.
+
+#### APA 7
+
+Wieland, M., Simon, L., Kohne, J., Otto, L. (2024). GESIS AppKit -  Documentation & User Manual. Available at https://gesiscss.github.io/AppKit_Documentation/. DOI: [Coming Soon]
+
+#### BibTeX
+
+```bibtex
+@manual{wieland2024appkit,
+  author    = {Wieland, Mareike and Simon, Lara and Kohne, Julian and Otto-Rahnke, Lukas},
+  title     = {GESIS AppKit - Documentation \& User Manual},
+  year      = {2024},
+  note      = {\url{https://gesiscss.github.io/AppKit_Documentation/}},
+  doi       = {Coming Soon}
+}
+```
