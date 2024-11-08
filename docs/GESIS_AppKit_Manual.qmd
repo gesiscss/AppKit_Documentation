@@ -698,7 +698,7 @@ Zitationen helfen uns dabei die Nutzung des AppKits zu tracken um den Service ko
 
 #### APA 7
 
-Wieland, M., Simon, L., Kohne, J., Rahnke-Otto, L. (2024). GESIS AppKit -  Documentation & User Manual. Available at https://gesiscss.github.io/AppKit_Documentation/. DOI: [Coming Soon]
+Wieland, M., Simon, L., Kohne, J., Rahnke-Otto, L. (2024). GESIS AppKit -  Documentation & User Manual. Available at https://gesiscss.github.io/AppKit_Documentation/. DOI: https://doi.org/10.5281/zenodo.14056168
 
 #### BibTeX
 
@@ -708,6 +708,6 @@ Wieland, M., Simon, L., Kohne, J., Rahnke-Otto, L. (2024). GESIS AppKit -  Docum
   title     = {GESIS AppKit - Documentation \& User Manual},
   year      = {2024},
   note      = {\url{https://gesiscss.github.io/AppKit_Documentation/}},
-  doi       = {Coming Soon}
+  doi       = {https://doi.org/10.5281/zenodo.14056168}
 }
 ```
