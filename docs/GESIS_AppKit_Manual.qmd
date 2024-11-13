@@ -188,7 +188,7 @@ Bei den Icons muss es sich um .png-Dateien mit [genau]{.underline} 1024 x 1024 P
 
 Unter dem Abschnitt "In-App Texte" müssen Sie-, verschiedene Texte anpassen, die den Studienteilnehmenden direkt in der App angezeigt werden.
 
-::: callout-caution
+::: {.callout-important title="Achtung"}
 Sie können diese Felder nicht leer lassen!
 :::
 
@@ -433,7 +433,7 @@ Nehmen Sie folgende Einstellungen vor:
 Kommt es beim Speichern zu einer Fehlermeldung ist es zuverlässiger, den Dialog zum Eingeben des Items neu zu starten, indem über „Fragebogen erstellen“ die Eingabe frisch begonnen wird.
 :::
 
-::: callout-caution
+::: {.callout-warning title="Wichtig"}
 Wenn Sie innerhalb eines Containers mehrere Fotos hochladen lassen wollen, legen Sie für jeden Upload unbedingt ein neues Item an. Bei mehrfacher Verwendung desselben Items innerhalb eines Containers kann es ansonsten vorkommen, dass das zuerst hochgeladene Foto darauf folgende Uploads verhindert.  
 :::
 
@@ -475,8 +475,8 @@ Nehmen Sie folgende Einstellungen vor:
 
 -   Haben Sie mehrere Items ausgewählt, können Sie die Reihenfolge beliebig per Drag&Drop verändern.
 
-::: callout-caution
-Wenn Sie Fragen innerhalb eines Containers wiederholt werden möchten, müssen Sie das Element erneut anlegen. Dies gilt insbesondere für das Hochladen von Fotos und Freitexteingaben.
+::: {.callout-warning title="Wichtig"}
+Wenn Sie Fragen innerhalb eines Containers wiederholt stellen möchten, müssen Sie das Element erneut anlegen. Dies gilt insbesondere für das Hochladen von Fotos und Freitexteingaben.
 :::
 
 ::: {.callout-important title="Achtung"}
