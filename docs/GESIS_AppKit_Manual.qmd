@@ -126,7 +126,7 @@ Sie können hier neue Projekte anlegen:
 
 Über "**create project**" können Sie neue Projekte anlegen:
 
-::: callout-caution
+::: {.callout-warning title="Wichtig"}
 Sie müssen zwingend einen Projektnamen und mindestens ein Keyword für dieses Projekt eingeben
 :::
 
