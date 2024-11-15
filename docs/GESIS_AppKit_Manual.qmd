@@ -711,3 +711,12 @@ Wieland, M., Simon, L., Kohne, J., Rahnke-Otto, L. (2024). GESIS AppKit -  Docum
   doi       = {https://doi.org/10.5281/zenodo.14056168}
 }
 ```
+
+### 11. Impressum und Datenschutz
+
+Das AppKit ist eine Forschungsinfrastruktur des GESIS - Leibniz Instituts für Sozialwissenschaften. Mehr Informationen
+zum Datenschutz und das Impressum des Instituts finden Sie unter folgenden Links:
+
+[https://www.gesis.org/institut/impressum](https://www.gesis.org/institut/impressum)
+
+[https://www.gesis.org/institut/datenschutz](https://www.gesis.org/institut/datenschutz)
