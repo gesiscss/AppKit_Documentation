@@ -64,15 +64,37 @@ editor: source
 
 ------------------------------------------------------------------------
 
+### 0. Zitation
+
+Wenn Sie das GESIS AppKit in Ihrer Forschung verwenden und dieses Manual hilfreich finden, freuen wir uns sehr über eine Zitation. Zitationen helfen uns dabei die Nutzung des AppKits zu tracken um den Service kontinuierlich zu finanzieren und kostenfrei anbieten zu können.
+
+#### APA 7
+
+Wieland, M., Simon, L., Kohne, J., Rahnke-Otto, L. (2024). GESIS AppKit - Documentation & User Manual. Available at https://gesiscss.github.io/AppKit_Documentation/. DOI: https://doi.org/10.5281/zenodo.14056168
+
+#### BibTeX
+
+``` bibtex
+@manual{wieland2024appkit,
+  author    = {Wieland, Mareike and Simon, Lara and Kohne, Julian and Rahnke-Otto, Lukas},
+  title     = {GESIS AppKit - Documentation \& User Manual},
+  year      = {2024},
+  note      = {\url{https://gesiscss.github.io/AppKit_Documentation/}},
+  doi       = {https://doi.org/10.5281/zenodo.14056168}
+}
+```
+
 ### 1. Einführung in das AppKit
 
-Um Ihnen den Einstieg in das GESIS AppKit so einfach wie möglich zu machen, haben wir alle wichtigen Informationen für Sie zusammengestellt.  
+Um Ihnen den Einstieg in das GESIS AppKit so einfach wie möglich zu machen, haben wir alle wichtigen Informationen für Sie zusammengestellt.
 
 #### 1.1. Was ist das GESIS AppKit?
 
 *Das GESIS AppKit bietet Ihnen eine umfassende Datenerhebungsinfrastruktur für Umfrage- und (perspektivisch) Sensordaten auf Smartphones. Es umfasst ein interaktives Dashboard zur Studienkonzeption und Verwaltung der Teilnehmenden sowie die App GESIS SMART für Android- und iOS-Geräte, die sich Ihre Studienteilnehmende über den Google Playstore bzw. den Appstore installieren können.*
 
 *Das GESIS AppKit ermöglicht in erster Linie, mobile Umfragen mit komplexen, zeitbasierten Ausspielplänen zu erstellen und dient damit der Umsetzung intensiver Längsschnittstudien im Sinne von Ambulatory Assessment, Experience Sampling oder Ecological Momentary Assessments.* 
+
+Weitere Informationen zum AppKit als Service finden Sie [hier](https://www.gesis.org/angebot/studien-planen-und-daten-erheben/erhebung/gesis-appkit)
 
 #### 1.2. Über dieses Handbuch
 
@@ -306,7 +328,7 @@ Unter diesem Reiter finden Sie ein Dashboard, das einen Überblick über Teilneh
 
 Die Tabelle ist rückwärts chronologisch sortiert. In der obersten Zeile ist der\*die Studienteilnehmende aufgeführt, die sich zuletzt erstmalig in Ihr Projekt eingeloggt hat. Erneute Logins per Personal Participant Code werden in dieser Tabelle nicht berücksichtigt.\
 
-### 6. Fragebögen erstellen und versenden
+### 6. Fragebögen erstellen
 
 In diesem Menü erstellen Sie Fragen/Items, bündeln diese zu Fragebögen und legen die Bedingungen für das Versenden einzelner Items oder gebündelter Items (Container) fest.
 
@@ -411,7 +433,7 @@ Nehmen Sie folgende Einstellungen vor:
 Kommt es beim Speichern zu einer Fehlermeldung ist es zuverlässiger, den Dialog zum Eingeben des Items neu zu starten, indem über „Fragebogen erstellen“ die Eingabe frisch begonnen wird.
 :::
 
-#### Foto hochladen:
+#### 6.1.2. Foto hochladen
 
 Da der Upload auch fehlschlagen kann, ist es zu empfehlen No-response Optionen zu verwenden.Über diesen Fragetypen können Teilnehmende innerhalb eines Fragebogens ein Bild hochladen. Sie können dazu direkt auf ihre Kamera zugreifen, ein Foto machen und dieses Foto unmittelbar hochladen. Alternativ erfolgt das Hochladen per Zugriff auf die Galerie. In beiden Fällen werden Nutzende aufgefordert, der App entsprechende Berechtigungen zu erteilen.
 
@@ -461,7 +483,7 @@ Nehmen Sie folgende Einstellungen vor:
 Kommt es beim Speichern zu einer Fehlermeldung ist es zuverlässiger, den Dialog zum Eingeben des Items neu zu starten, indem über „Fragebogen erstellen“ die Eingabe frisch begonnen wird.
 :::
 
-#### 6.1.2. Items bündeln (Container) {#Container}
+#### 6.1.3. Items bündeln (Container) {#Container}
 
 Der Item-Typ „Container“ dient dem Bündeln einzelner Items zu Fragebögen. Sie können die Container-Funktion nutzen, um einzelne Items (insbesondere vom Typ „Likert“ thematisch zu bündeln, sowie um Items, zu Containern gebündelte Items oder Fragen zu Fragebögen zusammenzustellen. Letzteres erleichtert das spätere Versenden.
 
@@ -491,9 +513,235 @@ Beachten Sie, dass Items, die hinter dem Itemtyp „Continue-Stop“ platziert w
 Kommt es beim Speichern zu einer Fehlermeldung ist es zuverlässiger, den Dialog zum Eingeben des Items neu zu starten, indem über „Fragebogen erstellen“ die Eingabe frisch begonnen wird.
 :::
 
-\
+### 7. Mit Externen Umfragen verbinden
 
-#### 6.2. Fragebögen versenden {#sec-7.-fragebögen-versenden}
+Mit dem Item-Typ "External Survey" können Sie Ihre Teilnehmer\*innen auf externe Umfragen umleiten. Dafür benötigen Sie einen Link zur externen Umfrage, der einen URL-Parameter enthält um den individuellen Teilnehmercode aus dem GESIS AppKit an das externe Surveytool zu übergeben. Ihre Umfrage im externen Surveytool muss weiterhin so konfiguriert sein, dass der über den URL-Parameter weitergeleitete Teilnehmercode auch im Datensatz des externen Umfragetools gespeichert wird.
+
+Um den Item-Typ im AppKit zu nutzen, nehmen Sie die folgenden Einstellungen vor:
+
+-   Wählen Sie einen Variablennamen. Dieser dient im späteren Export als Item-ID und muss daher eindeutig sein. Sollten Sie den Namen bereits vergeben haben, zeigt das GESIS AppKit eine entsprechende Warnmeldung an.
+
+-   Formulieren Sie einen Frage-Text oder Informationstext. Sie können Formatierungen vornehmen, indem Sie die angebotenen Optionen nutzen. Eingegebene Zeilenumbrüche werden in der Darstellung in der App übernommen.
+
+-   **Wichtig:** Dieser Itemtyp muss am Ende Ihrer Umfrage stehen, da die Umfrage beendet wird, sobald Ihre Teilnehmer\*innen auf den Link klicken.
+
+-   Klicken Sie auf „Speichern“. Setzen Sie das Anlegen weiterer Items oder Fragen ggf. fort, indem Sie im Menü „Erstellen“ erneut auf „Fragebogen erstellen“ klicken.
+
+-   Teilnehmer\*innen müssen beim Betätigen des Links akzeptieren, die GESIS SMART App zu verlassen und zum externen Umfragetool weitergeleitet zu werden.
+
+![](../img/All_items_Slide17.jpg)
+
+Das AppKit unterstützt die Verknüpfung mit externen Umfragetools wie **Unipark**, **LimeSurvey, Qualtrics** und **SoSci Survey**. Damit die Umfragen korrekt miteinander verknüpft und die Daten einheitlich exportiert werden können, muss ein URL-parameter zum Link des externen Umfragetools hinzugefügt und die externe Umfrage so konfiguriert werden, dass über den Parameter weitergegebene Daten im Datensatz des externen Umfragetools gespeichert werden.
+
+-   Die Formatierung des URL-parameters ist Umfragetool-spezifisch. Das heißt, die Formatierung des Links muss für jedes Tool individuell angepasst werden. Weitere Hinweise dazu finden Sie auch in der Dokumentation Ihres externen Umfragetools.
+
+-   Die GESIS SMART App fügt den Teilnehmercode automatisch an den Link des externen Umfragetools an. Sie müssen im Item-Typ lediglich den Link inklusive URL-parameter angeben.
+
+Generell gilt folgende Struktur für die Erstellung von URL-Parameter:
+
+-   **Erster Parameter:** Wird mit `?[name]=` eingeführt.
+
+-   **Weitere Parameter:** Werden mit `&[name]=` angehängt.
+
+Dieser Aufbau ist für die korrekte Integration mit allen Umfragetools entscheidend. Für einen Umfragelink mit dem folgenden Aufbau
+
+```         
+www.externes-tool.de/survey-123456/
+```
+
+könnte man also zum Beispiel einen URL-Parameter mit dem Namen `id` wie folgt hinzufügen:
+
+```         
+www.externes-tool.de/survey-123456/?id=
+```
+
+Um den Wert `abcdef` zu übergeben kann man diesen dann an den Parameter anheften
+
+```         
+www.externes-tool.de/survey-123456/?id=abcdef
+```
+
+Um nun noch einen weiteren Wert per URL-parameter zu übergeben, beispielsweise den Parameter `group` mit dem Wert `condition1`, können weitere Parameter hinzugefügt werden.
+
+```         
+www.externes-tool.de/survey-123456/?id=abcdef&group=condition1
+```
+
+Die GESIS SMART App fügt den Teilnehmercode automatisch an den Link des externen Umfragetools an. Sie müssen im Item-Typ lediglich den Link inklusive URL-Parameter angeben. Also z.B.:
+
+```         
+www.externes-tool.de/survey-123456/?id=
+```
+
+Wichtig ist dabei, dass der "offene" URL parameter am Ende des Links steht, damit der Teilnehmercode korrekt angehängt wird. Um den Wert `abcdef` zu übergeben während auch der group-Parameter vorhanden ist, sollte der Link also folgendermaßen formatiert werden:
+
+```         
+www.externes-tool.de/survey-123456/?group=condition1&id=
+```
+
+Damit der Teilnehmercode korrekt vom externen Umfragetool in den jeweiligen Datensatz gespeichert wird, muss die Umfrage entsprechend konfiguriert werden. Im folgenden beschreiben wir die Konfiguration für die Tools **Unipark**, **LimeSurvey, Qualtrics** und **SoSci Survey**.
+
+#### 7.1. Integration mit Unipark
+
+-   **Projekteigenschaften:** Gehen Sie unter dem Reiter **Projekteigenschaften** auf **Benutzerdefinierte Variablen**.
+
+![](../img/external_links1.jpg)
+
+-   **Anzahl der URL-Parameter:** Bestimmen Sie hier die benötigte Anzahl an URL-Parametern.
+
+-   **Parameter erstellen:** Klicken Sie auf **Labels und Datentyp** (ebenfalls im Bereich **Benutzerdefinierte Variablen**) um die Eigenschaften des URL parameters anzupassen.
+
+![](../img/external_links2.jpg)
+
+-   JJedem hinzugefügten Parameter wird ein **alphabetischer Wert** im Link zugeordnet, und im Datensatz der Unipark-Umfrage wird der Parameter unter einem spezifischen **Namen** gelistet. Im obigen Beispiel wird der Parameter im Datensatz unter dem Namen `ppred` geführt und im Link über den Parameter `a` übergeben.
+
+![](../img/external_links_labels.png)
+
+**Link ins AppKit einfügen:**
+
+-   Passen Sie den Umfragelink für das AppKit an, indem Sie den erstellten URL-Parameter anhängen.
+
+*Ein Beispiel:*
+
+Umfragelink:
+
+```         
+https://www.unipark.de/uc/gesis_app_kit/f79f/
+```
+
+Umfragelink mit erstelltem URL-parameter:
+
+```         
+https://www.unipark.de/uc/gesis_app_kit/f79f/?a=
+```
+
+Hier ist **a** der Parameter, den Sie selbst erstellt haben. Dies ist der Link den Sie im AppKit als Link im entsprechenden Item-Typ einfügen.
+
+Die GESIS SMART App fügt nach dem Ausspielen für jeden Teilnehmer den korrekten Wert für den individuellen Teilnehmercode an den Link an. Ein Teilnehmer mit dem Teilnehmercode `Test1234` würde also den folgenden Link erhalten:
+
+```         
+https://www.unipark.de/uc/gesis_app_kit/f79f/?a=Test1234
+```
+
+Im Unipark-Datensatz wird der Wert `Test1234` dann unter dem Namen `p_0001` gespeichert. Die über Unipark und das AppKit erhobenen Datensätze sind somit miteinander verknüpfbar.
+
+#### 7.2. Integration mit LimeSurvey
+
+Nachdem Sie alle erforderlichen Fragen für Ihren Fragebogen in LimeSurvey erstellt haben, fügen Sie eine Parameterfrage hinzu.
+
+-   Dazu fügen Sie eine zusätzliche Frage ein, die denselben Namen trägt, den der Parameter im Link tragen soll
+
+-   Wählen Sie als Fragetyp eine Freitext-Frage.
+
+-   Stellen Sie sicher, dass die Frage versteckt ist. Dies können Sie unter **Display** beim Erstellen der Frage einstellen.
+
+![](../img/external_links3.jpg)
+
+-   Gehen Sie nun im **Survey Menu** auf den Reiter **Panel Integration**
+
+-   Dort legen Sie die versteckte Frage als Parameter fest
+
+![](../img/external_links4.jpg)
+
+-   Sie können nun den Link inklusive Ihres Parameter im AppKit einfügen
+
+Da Sie die Namen Ihrer Parameter selbst bestimmen können, könnte ein Beispiel-Link für das AppKit folgendermaßen.
+
+*Ein Beispiel:*
+
+Umfragelink:
+
+```         
+https://appkittesting.limesurvey.net/195835?lang=en
+```
+
+Umfragelink mit erstelltem URL-parameter:
+
+```         
+https://appkittesting.limesurvey.net/195835?lang=en&appkit_id=
+```
+
+Hier ist **appkit_id** der Parameter den Sie selbst bestimmt haben. Die versteckte Frage, die den Parameter als Wert im Datensatz speichert muss also als `appkit_id` benannt worden sein. Dies ist der Link, den Sie im AppKit als Link im entsprechenden Item-Typ einfügen.
+
+Ein Teilnehmer mit der AppKit-ID `Test1234` würde den folgenden Link erhalten:
+
+```         
+https://appkittesting.limesurvey.net/195835?lang=en&appkit_id=Test1234
+```
+
+#### 7.3. Integration mit SoSci Survey
+
+Erstellen Sie Ihren Fragebogen und öffnen Sie anschließend unter **Survey Project** den Umfragelink.
+
+-   Der generierte Link enthält standardmäßig keine Parameter.
+
+-   Beim Einfügen im AppKit fügen Sie den ersten Parameter manuell an den Link an.
+
+-   Der Parameter lautet in diesem Fall `?r=`, da SoSci Survey den Parameter `r` für die Weiterleitung vordefiniert.
+
+**Link prüfen:** Der vollständige Link enthält nun den Parameter, der automatisch von unserer App um den entprechenden Teilnehmercode des Studienteilnehmers ergänzt wird.
+
+*Ein Beispiel:*
+
+Umfragelink:
+
+```         
+https://www.soscisurvey.de/appkit_test/
+```
+
+Umfragelink mit erstelltem URL-parameter:
+
+```         
+https://www.soscisurvey.de/appkit_test/?r=
+```
+
+Hier ist **r** der Parameter, welcher von SoSci Survey standartmäßig für die Weitergabe vorgesehen ist. Dies ist der Link, den Sie im AppKit als Link im entsprechenden Item-Typ einfügen.
+
+Ein Teilnehmer mit der AppKit-ID `Test1234` würde den folgenden Link erhalten:
+
+```         
+https://www.soscisurvey.de/appkit_test/?r=Test1234
+```
+
+#### 7.4. Integration mit Qualtrics
+
+-   Gehen Sie in Qualtrics auf den Reiter **Umfrageverlauf**
+
+-   Fügen Sie ein neues Element hinzu und wählen Sie **Eingebettete Daten**
+
+![](../img/external_links5.jpg)
+
+-   Dort können Sie unter **Neues Feld hinzufügen** den Namen Ihres Parameters eintippen und mit *Enter* bestätigen.
+
+![](../img/external_links6.jpg)
+
+-   Verschieben Sie das Element mit den eingebetteten Daten an den Beginn Ihrer Umfrage um sicherzustellen, dass der Parameter direkt am Anfang der Umfrage in den Datensatz geschrieben wird. Dies ist hilfreich für die spätere Analyse von Dropout-Raten.
+
+Da Sie die Parameter selber benennen können, fügen Sie diesen manuell als letzten Parameter an Ihren Umfragelink an.
+
+*Ein Beispiel:*
+
+Umfragelink:
+
+```         
+https://qualtricsxmsqcvms5dr.qualtrics.com/jfe/form/SV_82ht0lZpCka1zMO
+```
+
+Umfragelink mit erstelltem URL-parameter:
+
+```         
+https://qualtricsxmsqcvms5dr.qualtrics.com/jfe/form/SV_82ht0lZpCka1zMO?userid=
+```
+
+Hier ist **userid** der Parameter, den Sie selbst bestimmt haben. Dies ist der Link, den Sie im AppKit als Link im entsprechenden Item-Typ einfügen.
+
+Ein Teilnehmer mit der AppKit-ID `Test1234` würde den folgenden Link erhalten:
+
+```         
+https://qualtricsxmsqcvms5dr.qualtrics.com/jfe/form/SV_82ht0lZpCka1zMO?userid=Test1234
+```
+
+### 8 Fragebögen versenden {#sec-7.-fragebögen-versenden}
 
 In diesem Menü planen Sie das Versenden der zuvor angelegten Items und/oder Container (im Folgenden als „Fragebogen“ bezeichnet). Folgende zeitliche Optionen stehen zum Versenden zur Verfügung:
 
@@ -507,7 +755,7 @@ Für alle Fragebögen können Sie festlegen, welche Gruppen an Teilnehmenden die
 
 ![](../img/Slide15.jpg)
 
-##### 6.2.1. Jetzt versenden
+##### 8.2.1. Jetzt versenden
 
 Nehmen Sie folgende Einstellungen vor:
 
@@ -527,7 +775,7 @@ Sie können im Titel Emojis verwenden. Auf diese Weise können Sie die Ansprache
 
 -   Veröffentlichen Sie den Fragebogen über die nach dem Speichern eingeblendete Schaltfläche „Veröffentlichen“. Erst dann wird der Fragebogen versendet. Ein Ändern der Einstellungen ist nun nicht mehr möglich.
 
-##### 6.2.2. Direkt nach erstmaligen Einloggen versenden
+##### 8.2.2. Direkt nach erstmaligen Einloggen versenden
 
 Nehmen Sie folgende Einstellungen vor:
 
@@ -547,7 +795,7 @@ Sie können im Titel Emojis verwenden. Auf diese Weise können Sie die Ansprache
 
 -   Veröffentlichen Sie den Fragebogen über die nach dem Speichern eingeblendete Schaltfläche „Veröffentlichen“. Erst dann wird der Fragebogen versendet. Ein Ändern der Einstellungen ist nun nicht mehr möglich.
 
-##### 6.2.3. An bestimmtem Zeitpunkt(en) versenden
+##### 8.2.3. An bestimmtem Zeitpunkt(en) versenden
 
 Nehmen Sie folgende Einstellungen vor:
 
@@ -593,7 +841,7 @@ Sie können im Titel Emojis verwenden. Auf diese Weise können Sie die Ansprache
 
 -   Veröffentlichen Sie den Fragebogen über die nach dem Speichern eingeblendete Schaltfläche „Veröffentlichen“. Erst dann wird der Fragebogen versendet. Ein Ändern der Einstellungen ist nun nicht mehr möglich.
 
-##### 6.2.4. Dashboard aller angelegte und/oder versendeten Fragebögen
+##### 8.2.4. Dashboard aller angelegte und/oder versendeten Fragebögen
 
 Auf der Seite „Versenden“ werden alle terminierten Fragebögen angezeigt. Rechts sehen Sie zum einen, an welche Gruppe an Teilnehmenden der Fragebogen versendet wird/wurde.
 
@@ -609,7 +857,7 @@ Neben dem gewählten Titel des Fragebogens sehen Sie hier eine Zusammenfassung d
 
 Klicken Sie auf einen Eintrag, um die Fragebogen ID zu ermitteln. Diese benötigen Sie für den Export des entsprechenden Fragebogen unter „Daten exportieren“.
 
-##### 6.2.5. Gruppenbasiertes Versenden
+##### 8.2.5. Gruppenbasiertes Versenden
 
 Beim Versenden der Fragebögen können Sie auswählen, an welche Teilnehmenden dieser versendet werden soll. Sie können wählen zwischen
 
@@ -621,7 +869,7 @@ Beim Versenden der Fragebögen können Sie auswählen, an welche Teilnehmenden d
 
 -   Individuell definierte Gruppen (coming soon)
 
-### 7. Exportieren der Daten  
+### 9. Exportieren der Daten  
 
 Sobald Sie alle Daten beisammenhaben, können Sie ihre Daten als .csv file exportieren. Auch während der Datenerhebung können Sie Fragebögen exportieren, ohne dass dies die weitere Datenerhebung beeinflusst:
 
@@ -639,11 +887,11 @@ Sobald Sie alle Daten beisammenhaben, können Sie ihre Daten als .csv file expor
 
 -   Wenn der heruntergeladene Fragebogen einen Foto-Upload enthielt, werden diese Fotos direkt mit exportiert und im Ordner „files“ gespeichert. Der Dateiname dient der Zuordnung zum jeweiligen Eintrag im Fragebogen.  
 
-### 8. Anreize für Teilnehmer
+### 10. Anreize für Teilnehmer
 
 -   Nachdem die Umfrage abgeschlossen ist, haben Sie die Möglichkeit zu entscheiden, ob Ihren Teilnehmern ein Incentive gewährt werden soll. Dazu generieren Sie unter dem Abschnitt "Incentive" einen Code, den Sie an die Teilnehmer senden können, die die Umfrage erfolgreich abgeschlossen haben. 
 
-### 9. Umfrage-Items im Überblick
+### 11. Umfrage-Items im Überblick
 
 In diesem Kapitel finden Sie eine Anleitung zur Erstellung und Darstellung von Umfrage-Items im AppKit.
 
@@ -691,32 +939,10 @@ Download **GESIS Smart:**
 
 ![](../img/All_items_Slide16.jpg)
 
-### 10. Zitation
+### 12. Impressum und Datenschutz
 
-Wenn Sie das GESIS AppKit in Ihrer Forschung verwenden und dieses Manual hilfreich fanden, freuen wir uns sehr über eine Zitation.
-Zitationen helfen uns dabei die Nutzung des AppKits zu tracken um den Service kontinuierlich zu finanzieren und kostenfrei anbieten zu können.
+Das AppKit ist eine Forschungsinfrastruktur des GESIS - Leibniz Instituts für Sozialwissenschaften. Mehr Informationen zum Datenschutz und das Impressum des Instituts finden Sie unter folgenden Links:
 
-#### APA 7
+<https://www.gesis.org/institut/impressum>
 
-Wieland, M., Simon, L., Kohne, J., Rahnke-Otto, L. (2024). GESIS AppKit -  Documentation & User Manual. Available at https://gesiscss.github.io/AppKit_Documentation/. DOI: https://doi.org/10.5281/zenodo.14056168
-
-#### BibTeX
-
-```bibtex
-@manual{wieland2024appkit,
-  author    = {Wieland, Mareike and Simon, Lara and Kohne, Julian and Rahnke-Otto, Lukas},
-  title     = {GESIS AppKit - Documentation \& User Manual},
-  year      = {2024},
-  note      = {\url{https://gesiscss.github.io/AppKit_Documentation/}},
-  doi       = {https://doi.org/10.5281/zenodo.14056168}
-}
-```
-
-### 11. Impressum und Datenschutz
-
-Das AppKit ist eine Forschungsinfrastruktur des GESIS - Leibniz Instituts für Sozialwissenschaften. Mehr Informationen
-zum Datenschutz und das Impressum des Instituts finden Sie unter folgenden Links:
-
-[https://www.gesis.org/institut/impressum](https://www.gesis.org/institut/impressum)
-
-[https://www.gesis.org/institut/datenschutz](https://www.gesis.org/institut/datenschutz)
+<https://www.gesis.org/institut/datenschutz>
